@@ -2,7 +2,7 @@ mkdir devexp2
 
 cd devexp2
 
-mvn archetype:generate -Dgroupld=com.example -Dartifactld=myapp -DarchetypeArtifactld=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -Dgroupld:com.example -Dartifactld=myapp -DarchetypeArtifactld=maven-archetype-quickstart -DinteractiveMode=false
 
 cd myapp
 
