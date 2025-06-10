@@ -1,7 +1,7 @@
 mkdir DevOpsExp4 
 cd DevOpsExp4 
 
-mvn archetype:generate -DgroupId=com.example -DartifactId=maven-example-DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.example -DartifactId=maven-example -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 cd maven-example
 
@@ -9,7 +9,7 @@ cd maven-example
 
 mvn exec:java -Dexec.mainClass="com.example.App" 
 
-“gradle init
+gradle init
 
  It will ask Found a Maven build. Generate a Gradle build from this? (default: yes) [yes, no]
 type Yes
