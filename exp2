@@ -1,0 +1,13 @@
+mkdir devexp2
+
+cd devexp2
+
+mvn archetype:generate -Dgroupld=com.example -Dartifactld=myapp -DarchetypeArtifactld=maven-archetype-quickstart -DinteractiveMode=false
+
+cd myapp
+
+mvn compile
+
+mvn package
+
+java -cp target/myapp-1.0-SNAPSHOT.jar com.example.App
