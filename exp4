@@ -1,0 +1,40 @@
+mkdir DevOpsExp4 
+cd DevOpsExp4 
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=maven-example-DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+cd maven-example
+
+ mvn clean install
+
+mvn exec:java -Dexec.mainClass="com.example.App" 
+
+“gradle init
+
+ It will ask Found a Maven build. Generate a Gradle build from this? (default: yes) [yes, no]
+type Yes
+Select build script DSL: 
+• 1: Kotlin 
+• 2: Groovy 
+• Enter selection (default: Kotlin) [1.2] 
+• Type 2 
+• Generate build using new APIs and behavior (some features may change in the next minor 
+release)? (default: no) [yes, no] 
+• Type No 
+
+Navigate the project folder and open build.gradle file, add the code below, and save it. 
+task run(type: JavaExec) { 
+main = 'com.example.App' 
+classpath = sourceSets.main.runtimeClasspath 
+}
+
+gradlew build
+
+gradlew run
+
+Step 8: 
+Verify the Migration 
+  Compare the Output: Make sure that both the Maven and Gradle builds produce the same 
+output: 
+ 
+In command prompt type - mvn exec:java -Dexec.mainClass="com.example.App" 
