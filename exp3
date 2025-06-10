@@ -1,0 +1,50 @@
+mkdir DevOpsExp3 
+
+cd DevOpsExp3
+
+ gradle init --type java-application 
+
+ select application structure:  Single applapplication project
+
+ select build script DSL:      Groovy
+
+ select test framework:   JUnit4
+
+ if they ask to change the program navigate to the  src/main/java/org/example/App  and type
+(**This shold be done in the vs code**)
+
+
+package com.example; 
+public class AdditionOperation { 
+public static void main(String[] args) { 
+double num1 = 5; 
+double num2 = 10; 
+double sum = num1 + num2; 
+System.out.printf("The sum of %.2f and %.2f is %.2f%n", num1, num2, sum); 
+} 
+}
+
+
+next navigate to the  src/test/java/org/example/AppTest and type 
+
+package com.example; 
+import org.junit.Test; 
+import static org.junit.Assert.*; 
+public class AdditionOperationTest { 
+@Test 
+public void testAddition() { 
+double num1 = 5; 
+double num2 = 10; 
+double expectedSum = num1 + num2; 
+double actualSum = num1 + num2; 
+assertEquals(expectedSum, actualSum, 0.01); 
+} 
+}
+
+open command prompt and type
+
+gradle build 
+
+gradle run
+
+gradle test
