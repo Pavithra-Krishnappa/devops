@@ -15,7 +15,7 @@ cd DevOpsExp3
 
 
 package com.example; 
-public class AdditionOperation { 
+public class App { 
 public static void main(String[] args) { 
 double num1 = 5; 
 double num2 = 10; 
@@ -30,7 +30,7 @@ next navigate to the  src/test/java/org/example/AppTest and type
 package com.example; 
 import org.junit.Test; 
 import static org.junit.Assert.*; 
-public class AdditionOperationTest { 
+public class AppTest { 
 @Test 
 public void testAddition() { 
 double num1 = 5; 
