@@ -1,0 +1,104 @@
+Basic Git Commands
+
+Step 1: Create a new folder and open Git Bash/Cmd and go to the folder location
+
+Step 2: Run these commands for git configuration
+
+git config --global user.email “sampleGitHub@email.com “
+
+git config --global user.name “sampleGitHub_username “
+
+Step 3: Initialize git using this command
+
+git init
+
+Step 4: Add some sample files in the folder by using this command: 
+
+git touch <filename1.txt>
+
+git touch <filename2.html>
+
+git touch <filename3.py>
+
+git touch <filename4.js>
+
+Step 5: Run these commands to check status, add files, and commit your changes/updates
+
+git status [ To check status]
+
+git add <filename> [ To add a particular file]
+
+git add . [ To add all the files]
+
+git commit -m “Commit Message “ [ To commit all your changes]
+
+git remote add origin “github-url “ [ To add remote repo link to local repo]
+
+git push -u origin master [ To push your local changes to the remote]
+
+git pull origin master –rebase [ To pull from remote]
+
+To add team members to GitHub, the steps depend on whether you're working in:
+
+1. A personal repository, or
+
+2. An organization (best for team collaboration)
+
+Let’s look at both cases:
+
+ If You’re Using a Personal GitHub Repository:
+
+You can’t create teams, but you can invite collaborators.
+
+Steps:
+
+1. Go to your repository on GitHub.
+
+2. Click on Settings (top menu).
+
+3. In the left sidebar, click Collaborators (under "Access").
+
+4. Click "Add people".
+
+5. Enter their GitHub username or email and select them.
+
+6. Choose the permission level (Read / Write / Admin).
+
+7. Click Add.
+
+They’ll get an invitation to collaborate.
+
+ If You’re in a GitHub Organization:
+
+Organizations let you manage teams and permissions more efficiently.
+
+Step 1: Create or Go to the Organization
+
+1. Visit: https://github.com/organizations/new to create one.
+
+2. Or go to your existing organization.
+
+Step 2: Add Members to Organization
+
+1. Go to the organization page.
+
+2. Click "People" → "Invite member".
+
+3. Enter GitHub usernames.
+
+4. Choose role (Member / Owner).
+
+5. Optionally assign to team
+Click Send Invitation.
+
+ Step 3: Create a Team
+
+1. Go to your organization.
+
+2. Click "Teams" > New team.
+
+3. Give your team a name and description.
+
+4. Set repo access (you can assign specific repos to the team).
+
+5. Add members. 
